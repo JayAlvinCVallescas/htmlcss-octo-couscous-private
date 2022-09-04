@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Button */
+.btn{
+    width: 100%;
+    background: blue;
+    color: whitesmoke;
+    border: none;
+    border-radius: 1.5em;
+    padding: 0.7em 0;
+    cursor: pointer;
+    margin-bottom: 1em;
+    font-weight: bolder;
+    transition: 0.5s;
+ }
+ 
+ .btn:hover{
+     opacity: 0.5;
+ }
+
+/* Login Form Page */
+.loginfo-container{
+    width: 100%;
+    height: 100vh;
+}
+
+.loginfo{
+    padding: 3em 3em 5em 3em;
+    border: 1px solid rgb(175, 170, 170);
+    box-shadow: 0px 5px 1em blue;
+    border-radius: 20px;
+    width: 25%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.loginfo h2{
+    margin-bottom: 2.5em;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.loginfo input[type=text], .loginfo input[type=password]{
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    outline: none;
+    padding:1em  0 0.3em 0;
+    width: 100%;
+    margin-bottom: 3.5em;
+    border-bottom: 1px solid blue;
+}
+
+
+/* Add Record Page */
+.perinfo-container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.perinfo{
+    padding: 5em 4em;
+    border: 1px solid rgb(175, 170, 170);
+    box-shadow: 0px 5px 1em blue;
+}
+
+.perinfo h1{
+    margin-bottom: 1.5em;
+}
+
+
+.perinfo input[type=text], .perinfo input[type=number], .perinfo input[type=password]{
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    outline: none;
+    padding:1em  0 0.3em 0;
+    width: 100%;
+    margin-bottom: 1.9em;
+    border-bottom: 1px solid blue;
+}
+
+.temper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.temper input[type = number]{
+    width: 60%;
+    margin: 0;
+    text-align: center;
+}
+
+.perinfo button{
+    margin-top: 4em;
+}
+
+.perinfo select{
+    height: 3em;
+    border-radius: 1.5em;
+    cursor: pointer;
+    outline: none;
+    text-align: center;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* View Record Page */
+.table-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.top-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5em;
+}
+
+.back-btn{
+    padding: 1em 2em;
+    background: rgb(157, 157, 246);
+}
+
+
+table{
+    height: 20em;
+    border-collapse: collapse;
+}
+
+th, td{
+    border: 1px solid rgb(119, 119, 125);
+    padding: 5px 8px;
+}
+
+th{
+    background: rgb(157, 157, 246);
+    color: whitesmoke;
+    border-bottom: none;
+    padding: 1em 2em;
+}
+
+td:last-child{
+    text-align: center;
+}
+
+tr:hover{
+    background: rgb(172, 172, 235);
+    color: whitesmoke;
+    cursor: pointer;
+
+}
+
+@media only screen and (max-width:1300px){
+    .loginfo{
+        width: 50%;
+    }
+}
+
+
+@media only screen and (max-width:700px){
+    .loginfo{
+        width: 80%;
+    }
+}
